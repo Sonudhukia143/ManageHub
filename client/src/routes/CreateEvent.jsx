@@ -49,7 +49,7 @@ export default function CreateEventForm() {
         setLoading(true);
 
         try {
-            const response = await fetch("http://localhost:3000/api/createEvent", {
+            const response = await fetch("https://bank-website-41tu.vercel.app/api/createEvent", {
                 method: "POST",
                 headers: { 
                     "Content-Type": "application/json",

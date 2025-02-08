@@ -14,7 +14,7 @@ export default function Navbar() {
 
         try {
             setLoading(true)
-            const response = await fetch('http://localhost:3000/api/logout', {
+            const response = await fetch('https://bank-website-41tu.vercel.app/api/logout', {
                 method: 'POST',
                 credentials: 'include',
             });
