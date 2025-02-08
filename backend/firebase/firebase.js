@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
+import { initializeApp } from firebase/app;
 import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -7,14 +7,14 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAj5hhYzT0LiNWBQ5reOSV7_bp9l-ciXBo",
-  authDomain: "handlehub-8f070.firebaseapp.com",
-  databaseURL: "https://handlehub-8f070-default-rtdb.firebaseio.com",
-  projectId: "handlehub-8f070",
-  storageBucket: "handlehub-8f070.firebasestorage.app",
-  messagingSenderId: "771295283489",
-  appId: "1:771295283489:web:61744cb37f9e9ce00cd660",
-  measurementId: "G-CPMQV1WRGV"
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  databaseURL: process.env.databaseURL,
+  projectId: process.env.projectId,
+  storageBucket:process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId:process.env.appId,
+  measurementId: process.env.measurementId
 };
 
 // Initialize Firebase
