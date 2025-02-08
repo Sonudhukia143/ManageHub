@@ -22,7 +22,7 @@ export default function EventDetails() {
 
         async function fetchEventDetails() {
             try {
-                const response = await fetch(`https://bank-website-41tu.vercel.app/api/event/${id}`, {
+                const response = await fetch(`https://manage-hub-neon.vercel.app/api/event/${id}`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
@@ -48,7 +48,7 @@ export default function EventDetails() {
     async function handleEvent(action) {
         try {
             setLoading(true);
-            const response = await fetch(`https://bank-website-41tu.vercel.app/api/${action}/${id}`, {
+            const response = await fetch(`https://manage-hub-neon.vercel.app/api/${action}/${id}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

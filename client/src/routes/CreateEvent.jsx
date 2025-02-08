@@ -49,7 +49,7 @@ export default function CreateEventForm() {
         setLoading(true);
 
         try {
-            const response = await fetch("https://bank-website-41tu.vercel.app/api/createEvent", {
+            const response = await fetch("https://manage-hub-neon.vercel.app/api/createEvent", {
                 method: "POST",
                 headers: { 
                     "Content-Type": "application/json",

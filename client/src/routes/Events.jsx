@@ -17,7 +17,7 @@ export default function Homepage() {
     const fetchEvents = async () => {
         setLoading(true);
         try {
-            const response = await fetch("https://bank-website-41tu.vercel.app/api/events", {
+            const response = await fetch("https://manage-hub-neon.vercel.app/api/events", {
                 credentials: "include",
             });
             const data = await response.json();
